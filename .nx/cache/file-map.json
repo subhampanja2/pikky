@@ -8,6 +8,248 @@
   "nxJsonPlugins": [],
   "fileMap": {
     "projectFileMap": {
+      "task_2": [
+        {
+          "file": "apps/task_2/.env",
+          "hash": "7114192790454565146"
+        },
+        {
+          "file": "apps/task_2/.eslintrc.json",
+          "hash": "335129304426223874"
+        },
+        {
+          "file": "apps/task_2/.gitignore",
+          "hash": "14016911977608974124"
+        },
+        {
+          "file": "apps/task_2/README.md",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/task_2/app/(auth)/change-password/page.tsx",
+          "hash": "15605286397237894031"
+        },
+        {
+          "file": "apps/task_2/app/(auth)/layout.tsx",
+          "hash": "1274079814265232089"
+        },
+        {
+          "file": "apps/task_2/app/(auth)/profile/page.tsx",
+          "hash": "4460923804499532436"
+        },
+        {
+          "file": "apps/task_2/app/(auth)/signin/page.tsx",
+          "hash": "11474226147249598903"
+        },
+        {
+          "file": "apps/task_2/app/(auth)/signup/page.tsx",
+          "hash": "9352994484985256285"
+        },
+        {
+          "file": "apps/task_2/app/(root)/columns.tsx",
+          "hash": "7471746545195721404"
+        },
+        {
+          "file": "apps/task_2/app/(root)/page.tsx",
+          "hash": "1237460960165629450"
+        },
+        {
+          "file": "apps/task_2/app/api/auth/[...nextauth]/route.ts",
+          "hash": "1918497459808890996"
+        },
+        {
+          "file": "apps/task_2/app/error/page.tsx",
+          "hash": "5722318159293600288"
+        },
+        {
+          "file": "apps/task_2/app/favicon.ico",
+          "hash": "9157999678830540297"
+        },
+        {
+          "file": "apps/task_2/app/globals.css",
+          "hash": "10701648198204044231"
+        },
+        {
+          "file": "apps/task_2/app/layout.tsx",
+          "hash": "15752211127192425608"
+        },
+        {
+          "file": "apps/task_2/bun.lockb",
+          "hash": "5731406591140273326"
+        },
+        {
+          "file": "apps/task_2/components.json",
+          "hash": "13396898073522104015"
+        },
+        {
+          "file": "apps/task_2/components/button/signout-button.tsx",
+          "hash": "12538899081890301484"
+        },
+        {
+          "file": "apps/task_2/components/form/change-password-form.tsx",
+          "hash": "8458035521839759925"
+        },
+        {
+          "file": "apps/task_2/components/form/signin-form.tsx",
+          "hash": "642741822395194227"
+        },
+        {
+          "file": "apps/task_2/components/form/signup-form.tsx",
+          "hash": "3924549330420458011"
+        },
+        {
+          "file": "apps/task_2/components/form/update-form.tsx",
+          "hash": "12791657663883597348"
+        },
+        {
+          "file": "apps/task_2/components/shared/data-table.tsx",
+          "hash": "15197195804134752927"
+        },
+        {
+          "file": "apps/task_2/components/shared/mode-toggle.tsx",
+          "hash": "12468138659145642619"
+        },
+        {
+          "file": "apps/task_2/components/shared/navbar.tsx",
+          "hash": "16686612986367926135"
+        },
+        {
+          "file": "apps/task_2/components/shared/user-avatar.tsx",
+          "hash": "4690332182610421252"
+        },
+        {
+          "file": "apps/task_2/components/shared/user-nav.tsx",
+          "hash": "4223923575866120179"
+        },
+        {
+          "file": "apps/task_2/components/ui/avatar.tsx",
+          "hash": "8660661188500548189"
+        },
+        {
+          "file": "apps/task_2/components/ui/button.tsx",
+          "hash": "9655682392333026893"
+        },
+        {
+          "file": "apps/task_2/components/ui/dropdown-menu.tsx",
+          "hash": "1522769603090451912"
+        },
+        {
+          "file": "apps/task_2/components/ui/form.tsx",
+          "hash": "7650996287531206715"
+        },
+        {
+          "file": "apps/task_2/components/ui/input.tsx",
+          "hash": "4166087822449204632"
+        },
+        {
+          "file": "apps/task_2/components/ui/label.tsx",
+          "hash": "17461498100996495370"
+        },
+        {
+          "file": "apps/task_2/components/ui/table.tsx",
+          "hash": "12220893068497995597"
+        },
+        {
+          "file": "apps/task_2/components/ui/toast.tsx",
+          "hash": "1326391758004731988"
+        },
+        {
+          "file": "apps/task_2/components/ui/toaster.tsx",
+          "hash": "15074402455197094655"
+        },
+        {
+          "file": "apps/task_2/components/ui/use-toast.ts",
+          "hash": "7639988906046161755"
+        },
+        {
+          "file": "apps/task_2/lib/actions/auth.actions.ts",
+          "hash": "17739467415451000089"
+        },
+        {
+          "file": "apps/task_2/lib/actions/flight.actions.ts",
+          "hash": "3320500506351844929"
+        },
+        {
+          "file": "apps/task_2/lib/models/flight.model.ts",
+          "hash": "613456762027372681"
+        },
+        {
+          "file": "apps/task_2/lib/models/flight_status.model.ts",
+          "hash": "9061524110661943963"
+        },
+        {
+          "file": "apps/task_2/lib/models/user.model.ts",
+          "hash": "9977962592809141016"
+        },
+        {
+          "file": "apps/task_2/lib/mongodb.ts",
+          "hash": "9560429008885565779"
+        },
+        {
+          "file": "apps/task_2/lib/nextauth-options.ts",
+          "hash": "5602222400245761794"
+        },
+        {
+          "file": "apps/task_2/lib/utils.ts",
+          "hash": "4410618641919237161"
+        },
+        {
+          "file": "apps/task_2/lib/utils/token.ts",
+          "hash": "8341641795868212086"
+        },
+        {
+          "file": "apps/task_2/lib/validations/auth.ts",
+          "hash": "5620594568464499317"
+        },
+        {
+          "file": "apps/task_2/middleware.ts",
+          "hash": "14358197170495202963"
+        },
+        {
+          "file": "apps/task_2/next.config.js",
+          "hash": "5193729682953130295"
+        },
+        {
+          "file": "apps/task_2/package.json",
+          "hash": "8459237442374422871"
+        },
+        {
+          "file": "apps/task_2/postcss.config.js",
+          "hash": "1579725330904862112"
+        },
+        {
+          "file": "apps/task_2/providers/auth-provider.tsx",
+          "hash": "7998619343244630630"
+        },
+        {
+          "file": "apps/task_2/providers/theme-provider.tsx",
+          "hash": "5673558832809507121"
+        },
+        {
+          "file": "apps/task_2/public/next.svg",
+          "hash": "8300767200008744458"
+        },
+        {
+          "file": "apps/task_2/public/vercel.svg",
+          "hash": "2376673330454856631"
+        },
+        {
+          "file": "apps/task_2/tailwind.config.js",
+          "hash": "2520089696046008267"
+        },
+        {
+          "file": "apps/task_2/tailwind.config.ts",
+          "hash": "8021277806032496745"
+        },
+        {
+          "file": "apps/task_2/tsconfig.json",
+          "hash": "13566095390403677056"
+        },
+        {
+          "file": "apps/task_2/types/next-auth.d.ts",
+          "hash": "1431855768794758575"
+        }
+      ],
       "task_1": [
         {
           "file": "apps/task_1/.env",
@@ -19,7 +261,7 @@
         },
         {
           "file": "apps/task_1/bun.lockb",
-          "hash": "11652691049759074089"
+          "hash": "12317962195133264803"
         },
         {
           "file": "apps/task_1/logs/food-api.log",
@@ -69,254 +311,20 @@
           "file": "apps/task_1/tsconfig.json",
           "hash": "11874370123734579161"
         }
-      ],
-      "task_2": [
-        {
-          "file": "apps/task_2/.env",
-          "hash": "10738129696857415701"
-        },
-        {
-          "file": "apps/task_2/.eslintrc.json",
-          "hash": "335129304426223874"
-        },
-        {
-          "file": "apps/task_2/.gitignore",
-          "hash": "14016911977608974124"
-        },
-        {
-          "file": "apps/task_2/README.md",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "apps/task_2/app/(auth)/change-password/page.tsx",
-          "hash": "15605286397237894031"
-        },
-        {
-          "file": "apps/task_2/app/(auth)/layout.tsx",
-          "hash": "1274079814265232089"
-        },
-        {
-          "file": "apps/task_2/app/(auth)/profile/page.tsx",
-          "hash": "4460923804499532436"
-        },
-        {
-          "file": "apps/task_2/app/(auth)/signin/page.tsx",
-          "hash": "11474226147249598903"
-        },
-        {
-          "file": "apps/task_2/app/(auth)/signup/page.tsx",
-          "hash": "9352994484985256285"
-        },
-        {
-          "file": "apps/task_2/app/(root)/page.tsx",
-          "hash": "17887552181821251342"
-        },
-        {
-          "file": "apps/task_2/app/api/auth/[...nextauth]/route.ts",
-          "hash": "1918497459808890996"
-        },
-        {
-          "file": "apps/task_2/app/dashboard/page.tsx",
-          "hash": "17444684673019532492"
-        },
-        {
-          "file": "apps/task_2/app/error/page.tsx",
-          "hash": "5722318159293600288"
-        },
-        {
-          "file": "apps/task_2/app/favicon.ico",
-          "hash": "9157999678830540297"
-        },
-        {
-          "file": "apps/task_2/app/globals.css",
-          "hash": "10701648198204044231"
-        },
-        {
-          "file": "apps/task_2/app/layout.tsx",
-          "hash": "2250997315659576448"
-        },
-        {
-          "file": "apps/task_2/app/unauthorized/page.tsx",
-          "hash": "8504380218163204344"
-        },
-        {
-          "file": "apps/task_2/bun.lockb",
-          "hash": "7522106068541207600"
-        },
-        {
-          "file": "apps/task_2/components.json",
-          "hash": "13396898073522104015"
-        },
-        {
-          "file": "apps/task_2/components/button/signout-button.tsx",
-          "hash": "12538899081890301484"
-        },
-        {
-          "file": "apps/task_2/components/form/change-password-form.tsx",
-          "hash": "8458035521839759925"
-        },
-        {
-          "file": "apps/task_2/components/form/signin-form.tsx",
-          "hash": "642741822395194227"
-        },
-        {
-          "file": "apps/task_2/components/form/signup-form.tsx",
-          "hash": "3924549330420458011"
-        },
-        {
-          "file": "apps/task_2/components/form/update-form.tsx",
-          "hash": "12791657663883597348"
-        },
-        {
-          "file": "apps/task_2/components/shared/footer.tsx",
-          "hash": "12766968533292349146"
-        },
-        {
-          "file": "apps/task_2/components/shared/main-nav.tsx",
-          "hash": "9800401178772743817"
-        },
-        {
-          "file": "apps/task_2/components/shared/mode-toggle.tsx",
-          "hash": "12468138659145642619"
-        },
-        {
-          "file": "apps/task_2/components/shared/navbar.tsx",
-          "hash": "11720874427627929309"
-        },
-        {
-          "file": "apps/task_2/components/shared/user-avatar.tsx",
-          "hash": "4690332182610421252"
-        },
-        {
-          "file": "apps/task_2/components/shared/user-nav.tsx",
-          "hash": "8438119234281408394"
-        },
-        {
-          "file": "apps/task_2/components/ui/avatar.tsx",
-          "hash": "8660661188500548189"
-        },
-        {
-          "file": "apps/task_2/components/ui/button.tsx",
-          "hash": "9655682392333026893"
-        },
-        {
-          "file": "apps/task_2/components/ui/dropdown-menu.tsx",
-          "hash": "1522769603090451912"
-        },
-        {
-          "file": "apps/task_2/components/ui/form.tsx",
-          "hash": "7650996287531206715"
-        },
-        {
-          "file": "apps/task_2/components/ui/input.tsx",
-          "hash": "4166087822449204632"
-        },
-        {
-          "file": "apps/task_2/components/ui/label.tsx",
-          "hash": "17461498100996495370"
-        },
-        {
-          "file": "apps/task_2/components/ui/toast.tsx",
-          "hash": "1326391758004731988"
-        },
-        {
-          "file": "apps/task_2/components/ui/toaster.tsx",
-          "hash": "15074402455197094655"
-        },
-        {
-          "file": "apps/task_2/components/ui/use-toast.ts",
-          "hash": "7639988906046161755"
-        },
-        {
-          "file": "apps/task_2/constants/index.ts",
-          "hash": "291081639759502790"
-        },
-        {
-          "file": "apps/task_2/lib/actions/auth.actions.ts",
-          "hash": "2612185000138668978"
-        },
-        {
-          "file": "apps/task_2/lib/models/user.model.ts",
-          "hash": "16235749437628373852"
-        },
-        {
-          "file": "apps/task_2/lib/mongodb.ts",
-          "hash": "9560429008885565779"
-        },
-        {
-          "file": "apps/task_2/lib/nextauth-options.ts",
-          "hash": "8265089843019096494"
-        },
-        {
-          "file": "apps/task_2/lib/utils.ts",
-          "hash": "4410618641919237161"
-        },
-        {
-          "file": "apps/task_2/lib/utils/token.ts",
-          "hash": "8341641795868212086"
-        },
-        {
-          "file": "apps/task_2/lib/validations/auth.ts",
-          "hash": "14337897815791706489"
-        },
-        {
-          "file": "apps/task_2/middleware.ts",
-          "hash": "5393104185932978891"
-        },
-        {
-          "file": "apps/task_2/next.config.js",
-          "hash": "5193729682953130295"
-        },
-        {
-          "file": "apps/task_2/package-lock.json",
-          "hash": "8932708662557625634"
-        },
-        {
-          "file": "apps/task_2/package.json",
-          "hash": "18152563292906133868"
-        },
-        {
-          "file": "apps/task_2/postcss.config.js",
-          "hash": "1579725330904862112"
-        },
-        {
-          "file": "apps/task_2/providers/auth-provider.tsx",
-          "hash": "7998619343244630630"
-        },
-        {
-          "file": "apps/task_2/providers/theme-provider.tsx",
-          "hash": "5673558832809507121"
-        },
-        {
-          "file": "apps/task_2/public/next.svg",
-          "hash": "8300767200008744458"
-        },
-        {
-          "file": "apps/task_2/public/vercel.svg",
-          "hash": "2376673330454856631"
-        },
-        {
-          "file": "apps/task_2/tailwind.config.js",
-          "hash": "2520089696046008267"
-        },
-        {
-          "file": "apps/task_2/tailwind.config.ts",
-          "hash": "8021277806032496745"
-        },
-        {
-          "file": "apps/task_2/tsconfig.json",
-          "hash": "13566095390403677056"
-        },
-        {
-          "file": "apps/task_2/types/next-auth.d.ts",
-          "hash": "1431855768794758575"
-        }
       ]
     },
     "nonProjectFiles": [
       {
         "file": ".gitignore",
         "hash": "11612638887042922903"
+      },
+      {
+        "file": "README.md",
+        "hash": "4127038623097393486"
+      },
+      {
+        "file": "bun.lockb",
+        "hash": "1334997077680960617"
       },
       {
         "file": "package.json",

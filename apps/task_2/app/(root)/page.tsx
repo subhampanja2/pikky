@@ -1,41 +1,54 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import { DataTable } from "@/components/shared/data-table";
+// import { getFlightData } from "./getFlightData"; // Import getFlightData function
+import {
+  getAllFlights,
+  getFlightStatus,
+  simulateFlights,
+} from "@/lib/actions/flight.actions";
 import { FlightData, columns } from "./columns";
-import { getUserSession } from "@/lib/actions/auth.actions";
-import { getFlightStatus } from "@/lib/actions/flight.actions";
-import { useEffect, useState } from "react";
-
-// async function getData(): Promise<FlightData[]> {
-//   return [
-//     {
-//       id: "728ed52f",
-//       number: "48451asd",
-//       origin: "kolkata",
-//       destination: "goa",
-//       depart_time: "10:00AM",
-//       status: "Delayed",
-//     },
-//   ];
-// }
+import { useSession } from "next-auth/react";
+import { useToast } from "@/components/ui/use-toast";
+import { Button } from "@/components/ui/button";
+import { experimental_useFormStatus as useFormStatus } from "react-dom";
 
 export default function DemoPage() {
-  const [flightStatus, setFightStatus] = useState<any>();
-  const loadData = async () => {
-    // const data = await getData();
-    const { session: user } = await getUserSession();
-    if (user) {
-      const flightStatus = await getFlightStatus();
-      setFightStatus(flightStatus);
-      console.log("🚀 ~ loadData ~ flightStatus:", flightStatus);
-    }
+  const [data, setData] = useState<any[]>([]);
+  const [flightStatus, setFlightStatus] = useState<string | null>(null);
+  const { toast } = useToast();
+  const { pending } = useFormStatus();
+
+  const { data: session, status } = useSession();
+
+  const simulatFlights = async () => {
+    await simulateFlights(10);
+    toast({
+      description: "Flight simulated succesfully. ",
+    });
   };
 
-  useEffect(() => {}, []);
+  useEffect(() => {
+    async function fetchData() {
+      const flightData = await getAllFlights();
+      setData(flightData);
+      if (status === "authenticated") {
+        const status = await getFlightStatus();
+      }
+    }
+
+    fetchData();
+  }, [status]);
 
   return (
     <div className="container mx-auto py-10">
-      {/* <DataTable columns={columns} data={data} /> */}
+      <div className="text-right py-3">
+        <Button className="text-white" onClick={() => simulatFlights()}>
+          {pending ? "Simulating..." : "Simulate flights"}
+        </Button>
+      </div>
+      <DataTable columns={columns} data={data} />
     </div>
   );
 }

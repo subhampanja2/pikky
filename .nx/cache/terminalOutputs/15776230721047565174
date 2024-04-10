@@ -1,0 +1,1063 @@
+
+> task_2@0.1.0 start:dev /Users/subhampanja/Desktop/pikky/apps/task_2
+> next dev
+
+- [36minfo[39m Loaded env from /Users/subhampanja/Desktop/pikky/apps/task_2/.env
+- [33mwarn[39m [1mYou have enabled experimental feature (serverActions) in next.config.js.[22m
+- [33mwarn[39m Experimental features are not covered by semver, and may cause unexpected or broken application behavior. Use at your own risk.
+
+- [32mready[39m started server on [::]:3000, url: http://localhost:3000
+- [35mevent[39m compiled client and server successfully in 150 ms (20 modules)
+- [36mwait[39m compiling...
+- [35mevent[39m compiled client and server successfully in 110 ms (20 modules)
+- [36minfo[39m Loaded env from /Users/subhampanja/Desktop/pikky/apps/task_2/.env
+- [36minfo[39m Loaded env from /Users/subhampanja/Desktop/pikky/apps/task_2/.env
+- [36mwait[39m compiling /(root)/page (client and server)...
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+- [35mevent[39m compiled client and server successfully in 5.7s (1256 modules)
+- [36mwait[39m compiling...
+- [35mevent[39m compiled successfully in 1219 ms (394 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+- [36mwait[39m compiling /api/auth/[...nextauth]/route (client and server)...
+- [35mevent[39m compiled client and server successfully in 983 ms (1271 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+- [36mwait[39m compiling /favicon.ico/route (client and server)...
+- [35mevent[39m compiled successfully in 328 ms (917 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+- [36mwait[39m compiling...
+- [35mevent[39m compiled client and server successfully in 339 ms (1311 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+- [36mwait[39m compiling...
+- [35mevent[39m compiled client and server successfully in 500 ms (1311 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+- [36mwait[39m compiling...
+- [31merror[39m ./app/(root)/page.tsx
+ReactServerComponentsError:
+
+You're importing a component that needs useState. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+Learn more: https://nextjs.org/docs/getting-started/react-essentials
+
+    ,-[[36;1;4m/Users/subhampanja/Desktop/pikky/apps/task_2/app/(root)/page.tsx[0m:4:1]
+ [2m 4[0m | import { FlightData, columns } from "./columns";
+ [2m 5[0m | import { getUserSession } from "@/lib/actions/auth.actions";
+ [2m 6[0m | import { getFlightStatus } from "@/lib/actions/flight.actions";
+ [2m 7[0m | import { useEffect, useState } from "react";
+    : [31;1m                    ^^^^^^^^[0m
+ [2m 8[0m | 
+ [2m 9[0m | async function getData(): Promise<FlightData[]> {
+ [2m10[0m |   return [
+    `----
+
+Maybe one of these should be marked as a client entry with "use client":
+  ./app/(root)/page.tsx
+- [36mwait[39m compiling /_error (client and server)...
+- [31merror[39m ./app/(root)/page.tsx
+ReactServerComponentsError:
+
+You're importing a component that needs useState. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+Learn more: https://nextjs.org/docs/getting-started/react-essentials
+
+    ,-[[36;1;4m/Users/subhampanja/Desktop/pikky/apps/task_2/app/(root)/page.tsx[0m:4:1]
+ [2m 4[0m | import { FlightData, columns } from "./columns";
+ [2m 5[0m | import { getUserSession } from "@/lib/actions/auth.actions";
+ [2m 6[0m | import { getFlightStatus } from "@/lib/actions/flight.actions";
+ [2m 7[0m | import { useEffect, useState } from "react";
+    : [31;1m                    ^^^^^^^^[0m
+ [2m 8[0m | 
+ [2m 9[0m | async function getData(): Promise<FlightData[]> {
+ [2m10[0m |   return [
+    `----
+
+Maybe one of these should be marked as a client entry with "use client":
+  ./app/(root)/page.tsx
+- [36mwait[39m compiling...
+- [31merror[39m ./app/(root)/page.tsx
+ReactServerComponentsError:
+
+You're importing a component that needs useState. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+Learn more: https://nextjs.org/docs/getting-started/react-essentials
+
+    ,-[[36;1;4m/Users/subhampanja/Desktop/pikky/apps/task_2/app/(root)/page.tsx[0m:4:1]
+ [2m 4[0m | import { FlightData, columns } from "./columns";
+ [2m 5[0m | import { getUserSession } from "@/lib/actions/auth.actions";
+ [2m 6[0m | import { getFlightStatus } from "@/lib/actions/flight.actions";
+ [2m 7[0m | import { useEffect, useState } from "react";
+    : [31;1m                    ^^^^^^^^[0m
+ [2m 8[0m | 
+ [2m 9[0m | async function getData(): Promise<FlightData[]> {
+ [2m10[0m |   return [
+    `----
+
+Maybe one of these should be marked as a client entry with "use client":
+  ./app/(root)/page.tsx
+- [33mwarn[39m Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+- [36mwait[39m compiling...
+- [31merror[39m ./app/(root)/page.tsx
+ReactServerComponentsError:
+
+You're importing a component that needs useEffect. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+Learn more: https://nextjs.org/docs/getting-started/react-essentials
+
+    ,-[[36;1;4m/Users/subhampanja/Desktop/pikky/apps/task_2/app/(root)/page.tsx[0m:4:1]
+ [2m 4[0m | import { FlightData, columns } from "./columns";
+ [2m 5[0m | import { getUserSession } from "@/lib/actions/auth.actions";
+ [2m 6[0m | import { getFlightStatus } from "@/lib/actions/flight.actions";
+ [2m 7[0m | import { useEffect, useState } from "react";
+    : [31;1m         ^^^^^^^^^[0m
+ [2m 8[0m | 
+ [2m 9[0m | async function getData(): Promise<FlightData[]> {
+ [2m10[0m |   return [
+    `----
+
+Maybe one of these should be marked as a client entry with "use client":
+  ./app/(root)/page.tsx
+- [36mwait[39m compiling...
+- [31merror[39m ./app/(root)/page.tsx
+ReactServerComponentsError:
+
+You're importing a component that needs useEffect. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+Learn more: https://nextjs.org/docs/getting-started/react-essentials
+
+    ,-[[36;1;4m/Users/subhampanja/Desktop/pikky/apps/task_2/app/(root)/page.tsx[0m:4:1]
+ [2m 4[0m | import { FlightData, columns } from "./columns";
+ [2m 5[0m | import { getUserSession } from "@/lib/actions/auth.actions";
+ [2m 6[0m | import { getFlightStatus } from "@/lib/actions/flight.actions";
+ [2m 7[0m | import { useEffect, useState } from "react";
+    : [31;1m         ^^^^^^^^^[0m
+ [2m 8[0m | 
+ [2m 9[0m | async function getData(): Promise<FlightData[]> {
+ [2m10[0m |   return [
+    `----
+
+Maybe one of these should be marked as a client entry with "use client":
+  ./app/(root)/page.tsx
+- [33mwarn[39m Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+- [36mwait[39m compiling...
+- [31merror[39m ./app/(root)/page.tsx
+ReactServerComponentsError:
+
+You're importing a component that needs useEffect. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+Learn more: https://nextjs.org/docs/getting-started/react-essentials
+
+    ,-[[36;1;4m/Users/subhampanja/Desktop/pikky/apps/task_2/app/(root)/page.tsx[0m:4:1]
+ [2m 4[0m | import { FlightData, columns } from "./columns";
+ [2m 5[0m | import { getUserSession } from "@/lib/actions/auth.actions";
+ [2m 6[0m | import { getFlightStatus } from "@/lib/actions/flight.actions";
+ [2m 7[0m | import { useEffect, useState } from "react";
+    : [31;1m         ^^^^^^^^^[0m
+ [2m 8[0m | 
+ [2m 9[0m | async function getData(): Promise<FlightData[]> {
+ [2m10[0m |   return [
+    `----
+
+Maybe one of these should be marked as a client entry with "use client":
+  ./app/(root)/page.tsx
+- [36mwait[39m compiling...
+- [31merror[39m ./app/(root)/page.tsx
+ReactServerComponentsError:
+
+You're importing a component that needs useEffect. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+Learn more: https://nextjs.org/docs/getting-started/react-essentials
+
+    ,-[[36;1;4m/Users/subhampanja/Desktop/pikky/apps/task_2/app/(root)/page.tsx[0m:4:1]
+ [2m 4[0m | import { FlightData, columns } from "./columns";
+ [2m 5[0m | import { getUserSession } from "@/lib/actions/auth.actions";
+ [2m 6[0m | import { getFlightStatus } from "@/lib/actions/flight.actions";
+ [2m 7[0m | import { useEffect, useState } from "react";
+    : [31;1m         ^^^^^^^^^[0m
+ [2m 8[0m | 
+ [2m 9[0m | async function getData(): Promise<FlightData[]> {
+ [2m10[0m |   return [
+    `----
+
+Maybe one of these should be marked as a client entry with "use client":
+  ./app/(root)/page.tsx
+- [33mwarn[39m Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+- [36mwait[39m compiling...
+- [31merror[39m ./app/(root)/page.tsx
+ReactServerComponentsError:
+
+You're importing a component that needs useEffect. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+Learn more: https://nextjs.org/docs/getting-started/react-essentials
+
+    ,-[[36;1;4m/Users/subhampanja/Desktop/pikky/apps/task_2/app/(root)/page.tsx[0m:4:1]
+ [2m 4[0m | import { FlightData, columns } from "./columns";
+ [2m 5[0m | import { getUserSession } from "@/lib/actions/auth.actions";
+ [2m 6[0m | import { getFlightStatus } from "@/lib/actions/flight.actions";
+ [2m 7[0m | import { useEffect, useState } from "react";
+    : [31;1m         ^^^^^^^^^[0m
+ [2m 8[0m | 
+ [2m 9[0m | async function getData(): Promise<FlightData[]> {
+ [2m10[0m |   return [
+    `----
+
+Maybe one of these should be marked as a client entry with "use client":
+  ./app/(root)/page.tsx
+- [33mwarn[39m Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+- [36mwait[39m compiling...
+- [31merror[39m ./app/(root)/page.tsx
+ReactServerComponentsError:
+
+You're importing a component that needs useEffect. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+Learn more: https://nextjs.org/docs/getting-started/react-essentials
+
+    ,-[[36;1;4m/Users/subhampanja/Desktop/pikky/apps/task_2/app/(root)/page.tsx[0m:4:1]
+ [2m 4[0m | import { FlightData, columns } from "./columns";
+ [2m 5[0m | import { getUserSession } from "@/lib/actions/auth.actions";
+ [2m 6[0m | import { getFlightStatus } from "@/lib/actions/flight.actions";
+ [2m 7[0m | import { useEffect, useState } from "react";
+    : [31;1m         ^^^^^^^^^[0m
+ [2m 8[0m | 
+ [2m 9[0m | async function getData(): Promise<FlightData[]> {
+ [2m10[0m |   return [
+    `----
+
+Maybe one of these should be marked as a client entry with "use client":
+  ./app/(root)/page.tsx
+- [33mwarn[39m Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+- [36mwait[39m compiling...
+- [31merror[39m ./app/(root)/page.tsx
+ReactServerComponentsError:
+
+You're importing a component that needs useEffect. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+Learn more: https://nextjs.org/docs/getting-started/react-essentials
+
+    ,-[[36;1;4m/Users/subhampanja/Desktop/pikky/apps/task_2/app/(root)/page.tsx[0m:4:1]
+ [2m 4[0m | import { FlightData, columns } from "./columns";
+ [2m 5[0m | import { getUserSession } from "@/lib/actions/auth.actions";
+ [2m 6[0m | import { getFlightStatus } from "@/lib/actions/flight.actions";
+ [2m 7[0m | import { useEffect, useState } from "react";
+    : [31;1m         ^^^^^^^^^[0m
+ [2m 8[0m | 
+ [2m 9[0m | async function getData(): Promise<FlightData[]> {
+ [2m10[0m |   return [
+    `----
+
+Maybe one of these should be marked as a client entry with "use client":
+  ./app/(root)/page.tsx
+- [33mwarn[39m Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+- [36mwait[39m compiling...
+- [31merror[39m ./app/(root)/page.tsx
+ReactServerComponentsError:
+
+You're importing a component that needs useEffect. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+Learn more: https://nextjs.org/docs/getting-started/react-essentials
+
+    ,-[[36;1;4m/Users/subhampanja/Desktop/pikky/apps/task_2/app/(root)/page.tsx[0m:4:1]
+ [2m 4[0m | import { FlightData, columns } from "./columns";
+ [2m 5[0m | import { getUserSession } from "@/lib/actions/auth.actions";
+ [2m 6[0m | import { getFlightStatus } from "@/lib/actions/flight.actions";
+ [2m 7[0m | import { useEffect, useState } from "react";
+    : [31;1m         ^^^^^^^^^[0m
+ [2m 8[0m | 
+ [2m 9[0m | async function getData(): Promise<FlightData[]> {
+ [2m10[0m |   return [
+    `----
+
+Maybe one of these should be marked as a client entry with "use client":
+  ./app/(root)/page.tsx
+- [33mwarn[39m Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+- [36mwait[39m compiling...
+- [31merror[39m ./app/(root)/page.tsx
+ReactServerComponentsError:
+
+You're importing a component that needs useEffect. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+Learn more: https://nextjs.org/docs/getting-started/react-essentials
+
+    ,-[[36;1;4m/Users/subhampanja/Desktop/pikky/apps/task_2/app/(root)/page.tsx[0m:4:1]
+ [2m 4[0m | import { FlightData, columns } from "./columns";
+ [2m 5[0m | import { getUserSession } from "@/lib/actions/auth.actions";
+ [2m 6[0m | import { getFlightStatus } from "@/lib/actions/flight.actions";
+ [2m 7[0m | import { useEffect } from "react";
+    : [31;1m         ^^^^^^^^^[0m
+ [2m 8[0m | 
+ [2m 9[0m | async function getData(): Promise<FlightData[]> {
+ [2m10[0m |   return [
+    `----
+
+Maybe one of these should be marked as a client entry with "use client":
+  ./app/(root)/page.tsx
+- [33mwarn[39m Fast Refresh had to perform a full reload due to a runtime error.
+- [36mwait[39m compiling...
+- [35mevent[39m compiled client and server successfully in 1867 ms (1179 modules)
+- [33mwarn[39m Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+- [31merror[39m app/(root)/page.tsx (34:2) @ useEffect
+- [31merror[39m ReferenceError: useEffect is not defined
+    at DemoPage (page.tsx:37:5)
+    at async Promise.all (index 0)
+    at async Promise.all (index 0)
+[0m [90m 32 | [39m  }[33m;[39m[0m
+[0m [90m 33 | [39m[0m
+[0m[31m[1m>[22m[39m[90m 34 | [39m  useEffect(() [33m=>[39m {}[33m,[39m [])[33m;[39m[0m
+[0m [90m    | [39m [31m[1m^[22m[39m[0m
+[0m [90m 35 | [39m[0m
+[0m [90m 36 | [39m  [36mreturn[39m ([0m
+[0m [90m 37 | [39m    [33m<[39m[33mdiv[39m className[33m=[39m[32m"container mx-auto py-10"[39m[33m>[39m[0m
+- [31merror[39m app/(root)/page.tsx (34:2) @ useEffect
+- [31merror[39m ReferenceError: useEffect is not defined
+    at DemoPage (page.tsx:37:5)
+    at async Promise.all (index 0)
+    at async Promise.all (index 0)
+digest: "63615567"
+[0m [90m 32 | [39m  }[33m;[39m[0m
+[0m [90m 33 | [39m[0m
+[0m[31m[1m>[22m[39m[90m 34 | [39m  useEffect(() [33m=>[39m {}[33m,[39m [])[33m;[39m[0m
+[0m [90m    | [39m [31m[1m^[22m[39m[0m
+[0m [90m 35 | [39m[0m
+[0m [90m 36 | [39m  [36mreturn[39m ([0m
+[0m [90m 37 | [39m    [33m<[39m[33mdiv[39m className[33m=[39m[32m"container mx-auto py-10"[39m[33m>[39m[0m
+- [31merror[39m app/(root)/page.tsx (34:2) @ useEffect
+- [31merror[39m ReferenceError: useEffect is not defined
+    at DemoPage (page.tsx:37:5)
+    at async Promise.all (index 0)
+    at async Promise.all (index 0)
+[0m [90m 32 | [39m  }[33m;[39m[0m
+[0m [90m 33 | [39m[0m
+[0m[31m[1m>[22m[39m[90m 34 | [39m  useEffect(() [33m=>[39m {}[33m,[39m [])[33m;[39m[0m
+[0m [90m    | [39m [31m[1m^[22m[39m[0m
+[0m [90m 35 | [39m[0m
+[0m [90m 36 | [39m  [36mreturn[39m ([0m
+[0m [90m 37 | [39m    [33m<[39m[33mdiv[39m className[33m=[39m[32m"container mx-auto py-10"[39m[33m>[39m[0m
+- [31merror[39m app/(root)/page.tsx (34:2) @ useEffect
+- [31merror[39m ReferenceError: useEffect is not defined
+    at DemoPage (page.tsx:37:5)
+    at async Promise.all (index 0)
+    at async Promise.all (index 0)
+digest: "4156128897"
+[0m [90m 32 | [39m  }[33m;[39m[0m
+[0m [90m 33 | [39m[0m
+[0m[31m[1m>[22m[39m[90m 34 | [39m  useEffect(() [33m=>[39m {}[33m,[39m [])[33m;[39m[0m
+[0m [90m    | [39m [31m[1m^[22m[39m[0m
+[0m [90m 35 | [39m[0m
+[0m [90m 36 | [39m  [36mreturn[39m ([0m
+[0m [90m 37 | [39m    [33m<[39m[33mdiv[39m className[33m=[39m[32m"container mx-auto py-10"[39m[33m>[39m[0m
+- [36mwait[39m compiling...
+- [35mevent[39m compiled client and server successfully in 234 ms (1193 modules)
+- [33mwarn[39m Fast Refresh had to perform a full reload due to a runtime error.
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+- [36mwait[39m compiling /api/auth/[...nextauth]/route (client and server)...
+- [35mevent[39m compiled successfully in 65 ms (700 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+Error initializing FlightStatus: MongooseError: Operation `flightstatuses.findOneAndUpdate()` buffering timed out after 10000ms
+    at Timeout.<anonymous> [90m(/Users/subhampanja/Desktop/pikky/apps/task_2/[39mnode_modules/[4mmongoose[24m/lib/drivers/node-mongodb-native/collection.js:186:23[90m)[39m
+[90m    at listOnTimeout (node:internal/timers:573:17)[39m
+[90m    at process.processTimers (node:internal/timers:514:7)[39m
+Error initializing FlightStatus: MongooseError: Operation `flightstatuses.findOneAndUpdate()` buffering timed out after 10000ms
+    at Timeout.<anonymous> [90m(/Users/subhampanja/Desktop/pikky/apps/task_2/[39mnode_modules/[4mmongoose[24m/lib/drivers/node-mongodb-native/collection.js:186:23[90m)[39m
+[90m    at listOnTimeout (node:internal/timers:573:17)[39m
+[90m    at process.processTimers (node:internal/timers:514:7)[39m
+Error initializing FlightStatus: MongooseError: Operation `flightstatuses.findOneAndUpdate()` buffering timed out after 10000ms
+    at Timeout.<anonymous> [90m(/Users/subhampanja/Desktop/pikky/apps/task_2/[39mnode_modules/[4mmongoose[24m/lib/drivers/node-mongodb-native/collection.js:186:23[90m)[39m
+[90m    at listOnTimeout (node:internal/timers:573:17)[39m
+[90m    at process.processTimers (node:internal/timers:514:7)[39m
+- [36mwait[39m compiling...
+- [35mevent[39m compiled client and server successfully in 306 ms (1197 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+🔴 Failed to connect to database
+🚀 Successfully connected to database
+- [36mwait[39m compiling /error/page (client and server)...
+- [35mevent[39m compiled client and server successfully in 448 ms (1192 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+- [36mwait[39m compiling...
+- [35mevent[39m compiled client and server successfully in 214 ms (1206 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+- [36mwait[39m compiling...
+- [35mevent[39m compiled client and server successfully in 406 ms (1206 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+🚀 Successfully connected to database
+- [36mwait[39m compiling...
+- [35mevent[39m compiled client and server successfully in 297 ms (1203 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+- [31merror[39m app/(root)/page.tsx (26:47) @ flightStatus
+- [31merror[39m ReferenceError: flightStatus is not defined
+    at DemoPage (page.tsx:28:60)
+[0m [90m 24 | [39m  [36mconst[39m { session[33m:[39m user } [33m=[39m [36mawait[39m getUserSession()[33m;[39m[0m
+[0m [90m 25 | [39m  [90m// const flightStatus = await getFlightStatus();[39m[0m
+[0m[31m[1m>[22m[39m[90m 26 | [39m  console[33m.[39mlog([32m"🚀 ~ DemoPage ~ flightStatus:"[39m[33m,[39m flightStatus)[33m;[39m[0m
+[0m [90m    | [39m                                              [31m[1m^[22m[39m[0m
+[0m [90m 27 | [39m[0m
+[0m [90m 28 | [39m  [36mreturn[39m ([0m
+[0m [90m 29 | [39m    [33m<[39m[33mdiv[39m className[33m=[39m[32m"container mx-auto py-10"[39m[33m>[39m[0m
+- [31merror[39m app/(root)/page.tsx (26:47) @ flightStatus
+- [31merror[39m ReferenceError: flightStatus is not defined
+    at DemoPage (page.tsx:28:60)
+digest: "2966820913"
+[0m [90m 24 | [39m  [36mconst[39m { session[33m:[39m user } [33m=[39m [36mawait[39m getUserSession()[33m;[39m[0m
+[0m [90m 25 | [39m  [90m// const flightStatus = await getFlightStatus();[39m[0m
+[0m[31m[1m>[22m[39m[90m 26 | [39m  console[33m.[39mlog([32m"🚀 ~ DemoPage ~ flightStatus:"[39m[33m,[39m flightStatus)[33m;[39m[0m
+[0m [90m    | [39m                                              [31m[1m^[22m[39m[0m
+[0m [90m 27 | [39m[0m
+[0m [90m 28 | [39m  [36mreturn[39m ([0m
+[0m [90m 29 | [39m    [33m<[39m[33mdiv[39m className[33m=[39m[32m"container mx-auto py-10"[39m[33m>[39m[0m
+- [31merror[39m app/(root)/page.tsx (26:47) @ flightStatus
+- [31merror[39m ReferenceError: flightStatus is not defined
+    at DemoPage (page.tsx:28:60)
+[0m [90m 24 | [39m  [36mconst[39m { session[33m:[39m user } [33m=[39m [36mawait[39m getUserSession()[33m;[39m[0m
+[0m [90m 25 | [39m  [90m// const flightStatus = await getFlightStatus();[39m[0m
+[0m[31m[1m>[22m[39m[90m 26 | [39m  console[33m.[39mlog([32m"🚀 ~ DemoPage ~ flightStatus:"[39m[33m,[39m flightStatus)[33m;[39m[0m
+[0m [90m    | [39m                                              [31m[1m^[22m[39m[0m
+[0m [90m 27 | [39m[0m
+[0m [90m 28 | [39m  [36mreturn[39m ([0m
+[0m [90m 29 | [39m    [33m<[39m[33mdiv[39m className[33m=[39m[32m"container mx-auto py-10"[39m[33m>[39m[0m
+- [31merror[39m app/(root)/page.tsx (26:47) @ flightStatus
+- [31merror[39m ReferenceError: flightStatus is not defined
+    at DemoPage (page.tsx:28:60)
+digest: "2966820913"
+[0m [90m 24 | [39m  [36mconst[39m { session[33m:[39m user } [33m=[39m [36mawait[39m getUserSession()[33m;[39m[0m
+[0m [90m 25 | [39m  [90m// const flightStatus = await getFlightStatus();[39m[0m
+[0m[31m[1m>[22m[39m[90m 26 | [39m  console[33m.[39mlog([32m"🚀 ~ DemoPage ~ flightStatus:"[39m[33m,[39m flightStatus)[33m;[39m[0m
+[0m [90m    | [39m                                              [31m[1m^[22m[39m[0m
+[0m [90m 27 | [39m[0m
+[0m [90m 28 | [39m  [36mreturn[39m ([0m
+[0m [90m 29 | [39m    [33m<[39m[33mdiv[39m className[33m=[39m[32m"container mx-auto py-10"[39m[33m>[39m[0m
+- [36mwait[39m compiling...
+- [35mevent[39m compiled client and server successfully in 327 ms (1203 modules)
+- [33mwarn[39m Fast Refresh had to perform a full reload due to a runtime error.
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+- [36mwait[39m compiling...
+- [35mevent[39m compiled client and server successfully in 294 ms (1206 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+🚀 Successfully connected to database
+- [36mwait[39m compiling...
+- [35mevent[39m compiled client and server successfully in 633 ms (1206 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+- [36mwait[39m compiling...
+- [31merror[39m ./app/(root)/page.tsx
+ReactServerComponentsError:
+
+You're importing a component that needs useEffect. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+Learn more: https://nextjs.org/docs/getting-started/react-essentials
+
+    ,-[[36;1;4m/Users/subhampanja/Desktop/pikky/apps/task_2/app/(root)/page.tsx[0m:33:1]
+ [2m33[0m | 
+ [2m34[0m | // "use client";
+ [2m35[0m | 
+ [2m36[0m | import { useState, useEffect } from "react";
+    : [31;1m                   ^^^^^^^^^[0m
+ [2m37[0m | import { DataTable } from "@/components/shared/data-table";
+ [2m38[0m | // import { getFlightData } from "./getFlightData"; // Import getFlightData function
+ [2m39[0m | import { getUserSession } from "@/lib/actions/auth.actions";
+    `----
+
+Maybe one of these should be marked as a client entry with "use client":
+  ./app/(root)/page.tsx
+- [36mwait[39m compiling /favicon.ico/route (client and server)...
+- [31merror[39m ./app/(root)/page.tsx
+ReactServerComponentsError:
+
+You're importing a component that needs useEffect. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+Learn more: https://nextjs.org/docs/getting-started/react-essentials
+
+    ,-[[36;1;4m/Users/subhampanja/Desktop/pikky/apps/task_2/app/(root)/page.tsx[0m:33:1]
+ [2m33[0m | 
+ [2m34[0m | // "use client";
+ [2m35[0m | 
+ [2m36[0m | import { useState, useEffect } from "react";
+    : [31;1m                   ^^^^^^^^^[0m
+ [2m37[0m | import { DataTable } from "@/components/shared/data-table";
+ [2m38[0m | // import { getFlightData } from "./getFlightData"; // Import getFlightData function
+ [2m39[0m | import { getUserSession } from "@/lib/actions/auth.actions";
+    `----
+
+Maybe one of these should be marked as a client entry with "use client":
+  ./app/(root)/page.tsx
+- [33mwarn[39m Fast Refresh had to perform a full reload due to a runtime error.
+- [36mwait[39m compiling...
+- [35mevent[39m compiled client and server successfully in 1745 ms (1449 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+- [33mwarn[39m Fast Refresh had to perform a full reload due to a runtime error.
+- [36mwait[39m compiling /api/auth/[...nextauth]/route (client and server)...
+- [35mevent[39m compiled successfully in 120 ms (955 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+- [36mwait[39m compiling...
+- [35mevent[39m compiled client and server successfully in 874 ms (1467 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+- [36mwait[39m compiling...
+- [35mevent[39m compiled client and server successfully in 517 ms (1467 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+- [36mwait[39m compiling /(auth)/signin/page (client and server)...
+- [35mevent[39m compiled client and server successfully in 671 ms (1483 modules)
+- [36mwait[39m compiling /(auth)/signup/page (client and server)...
+- [35mevent[39m compiled client and server successfully in 306 ms (1490 modules)
+🚀 Successfully connected to database
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+🚀 Successfully connected to database
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  [{$__: ..., $isNew: false, _doc: ...}, ..., ..., ...]
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  {_id: {}, status: "Delayed", __v: 0}
+        ^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  [..., {$__: ..., $isNew: false, _doc: ...}, ..., ...]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  {_id: {}, status: ..., __v: 0}
+        ^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  [..., ..., {$__: ..., $isNew: false, _doc: ...}, ...]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  {_id: {}, status: ..., __v: 0}
+        ^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  [..., ..., ..., {$__: ..., $isNew: false, _doc: ...}]
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  {_id: {}, status: ..., __v: 0}
+        ^^
+- [36mwait[39m compiling...
+- [35mevent[39m compiled client and server successfully in 1201 ms (1462 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+🚀 Successfully connected to database
+- [36mwait[39m compiling...
+- [35mevent[39m compiled client and server successfully in 767 ms (1476 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+🚀 Successfully connected to database
+- [36mwait[39m compiling...
+- [35mevent[39m compiled client and server successfully in 1082 ms (1476 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+🚀 Successfully connected to database
+- [36mwait[39m compiling...
+- [35mevent[39m compiled client and server successfully in 477 ms (1476 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+- [36mwait[39m compiling...
+- [35mevent[39m compiled client and server successfully in 419 ms (1476 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+- [36mwait[39m compiling...
+- [35mevent[39m compiled client and server successfully in 405 ms (1476 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+- [36mwait[39m compiling /favicon.ico/route (client and server)...
+- [35mevent[39m compiled successfully in 137 ms (976 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+🚀 Successfully connected to database
+- [36mwait[39m compiling...
+- [35mevent[39m compiled client and server successfully in 569 ms (1502 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+🚀 Successfully connected to database
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  [{$__: ..., $isNew: false, _doc: ...}, ..., ..., ...]
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  {_id: {}, status: "Delayed", __v: 0}
+        ^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  [..., {$__: ..., $isNew: false, _doc: ...}, ..., ...]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  {_id: {}, status: ..., __v: 0}
+        ^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  [..., ..., {$__: ..., $isNew: false, _doc: ...}, ...]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  {_id: {}, status: ..., __v: 0}
+        ^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  [..., ..., ..., {$__: ..., $isNew: false, _doc: ...}]
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  {_id: {}, status: ..., __v: 0}
+        ^^
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+🚀 Successfully connected to database
+- [36mwait[39m compiling...
+- [35mevent[39m compiled client and server successfully in 708 ms (1502 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+🚀 Successfully connected to database
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  [{$__: ..., $isNew: false, _doc: ...}, ..., ..., ...]
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  {_id: {}, status: "Delayed", __v: 0}
+        ^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  [..., {$__: ..., $isNew: false, _doc: ...}, ..., ...]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  {_id: {}, status: ..., __v: 0}
+        ^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  [..., ..., {$__: ..., $isNew: false, _doc: ...}, ...]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  {_id: {}, status: ..., __v: 0}
+        ^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  [..., ..., ..., {$__: ..., $isNew: false, _doc: ...}]
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  {_id: {}, status: ..., __v: 0}
+        ^^
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+🚀 Successfully connected to database
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  [{$__: ..., $isNew: false, _doc: ...}, ..., ..., ...]
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  {_id: {}, status: "Delayed", __v: 0}
+        ^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  [..., {$__: ..., $isNew: false, _doc: ...}, ..., ...]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  {_id: {}, status: ..., __v: 0}
+        ^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  [..., ..., {$__: ..., $isNew: false, _doc: ...}, ...]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  {_id: {}, status: ..., __v: 0}
+        ^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  [..., ..., ..., {$__: ..., $isNew: false, _doc: ...}]
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  {_id: {}, status: ..., __v: 0}
+        ^^
+- [36mwait[39m compiling...
+- [35mevent[39m compiled client and server successfully in 1007 ms (1488 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+🚀 Successfully connected to database
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+🚀 Successfully connected to database
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  [{$__: ..., $isNew: false, _doc: ...}, ..., ..., ...]
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  {_id: {}, status: "Delayed", __v: 0}
+        ^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  [..., {$__: ..., $isNew: false, _doc: ...}, ..., ...]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  {_id: {}, status: ..., __v: 0}
+        ^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  [..., ..., {$__: ..., $isNew: false, _doc: ...}, ...]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  {_id: {}, status: ..., __v: 0}
+        ^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  [..., ..., ..., {$__: ..., $isNew: false, _doc: ...}]
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  {_id: {}, status: ..., __v: 0}
+        ^^
+- [36mwait[39m compiling...
+- [35mevent[39m compiled client and server successfully in 630 ms (1502 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+🚀 Successfully connected to database
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+🚀 Successfully connected to database
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  [{$__: ..., $isNew: false, _doc: ...}, ..., ..., ...]
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  {_id: {}, status: "Delayed", __v: 0}
+        ^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  [..., {$__: ..., $isNew: false, _doc: ...}, ..., ...]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  {_id: {}, status: ..., __v: 0}
+        ^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  [..., ..., {$__: ..., $isNew: false, _doc: ...}, ...]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  {_id: {}, status: ..., __v: 0}
+        ^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  [..., ..., ..., {$__: ..., $isNew: false, _doc: ...}]
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  {_id: {}, status: ..., __v: 0}
+        ^^
+- [36mwait[39m compiling...
+- [35mevent[39m compiled client and server successfully in 332 ms (1502 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+🚀 Successfully connected to database
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+🚀 Successfully connected to database
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  [{$__: ..., $isNew: false, _doc: ...}, ..., ..., ...]
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  {_id: {}, status: "Delayed", __v: 0}
+        ^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  [..., {$__: ..., $isNew: false, _doc: ...}, ..., ...]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  {_id: {}, status: ..., __v: 0}
+        ^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  [..., ..., {$__: ..., $isNew: false, _doc: ...}, ...]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  {_id: {}, status: ..., __v: 0}
+        ^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  [..., ..., ..., {$__: ..., $isNew: false, _doc: ...}]
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  {_id: {}, status: ..., __v: 0}
+        ^^
+- [36mwait[39m compiling...
+- [35mevent[39m compiled client and server successfully in 261 ms (1502 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+🚀 Successfully connected to database
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+🚀 Successfully connected to database
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  [{$__: ..., $isNew: false, _doc: ...}, ..., ..., ...]
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  {_id: {}, status: "Delayed", __v: 0}
+        ^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  [..., {$__: ..., $isNew: false, _doc: ...}, ..., ...]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  {_id: {}, status: ..., __v: 0}
+        ^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  [..., ..., {$__: ..., $isNew: false, _doc: ...}, ...]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  {_id: {}, status: ..., __v: 0}
+        ^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  [..., ..., ..., {$__: ..., $isNew: false, _doc: ...}]
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  {_id: {}, status: ..., __v: 0}
+        ^^
+- [36mwait[39m compiling...
+- [35mevent[39m compiled client and server successfully in 716 ms (1425 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+🚀 Successfully connected to database
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  [{$__: ..., $isNew: false, _doc: ...}, ..., ..., ...]
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  {_id: {}, status: "Delayed", __v: 0}
+        ^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  [..., {$__: ..., $isNew: false, _doc: ...}, ..., ...]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  {_id: {}, status: ..., __v: 0}
+        ^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  [..., ..., {$__: ..., $isNew: false, _doc: ...}, ...]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  {_id: {}, status: ..., __v: 0}
+        ^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  [..., ..., ..., {$__: ..., $isNew: false, _doc: ...}]
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  {_id: {}, status: ..., __v: 0}
+        ^^
+- [36mwait[39m compiling...
+- [35mevent[39m compiled client and server successfully in 227 ms (1425 modules)
+- [36mwait[39m compiling...
+- [35mevent[39m compiled client and server successfully in 297 ms (1425 modules)
+- [36mwait[39m compiling...
+- [31merror[39m ./lib/actions/flight.actions.ts
+Error: 
+  [31mx[0m Server actions must be async functions
+    ,-[[36;1;4m/Users/subhampanja/Desktop/pikky/apps/task_2/lib/actions/flight.actions.ts[0m:63:1]
+ [2m63[0m | }
+ [2m64[0m | 
+ [2m65[0m | // Function to simulate flights based on count
+ [2m66[0m | export function simulateFlights(count) {
+    : [31;1m                ^^^^^^^^^^^^^^^[0m
+ [2m67[0m |   const flights = [];
+ [2m68[0m | 
+ [2m69[0m |   // Generate 'count' number of flight data
+    `----
+
+Import trace for requested module:
+./lib/actions/flight.actions.ts
+./app/(root)/page.tsx
+- [36mwait[39m compiling...
+- [31merror[39m ./lib/actions/flight.actions.ts
+Error: 
+  [31mx[0m Server actions must be async functions
+    ,-[[36;1;4m/Users/subhampanja/Desktop/pikky/apps/task_2/lib/actions/flight.actions.ts[0m:63:1]
+ [2m63[0m | }
+ [2m64[0m | 
+ [2m65[0m | // Function to simulate flights based on count
+ [2m66[0m | export function simulateFlights(count) {
+    : [31;1m                ^^^^^^^^^^^^^^^[0m
+ [2m67[0m |   const flights = [];
+ [2m68[0m | 
+ [2m69[0m |   // Generate 'count' number of flight data
+    `----
+
+Import trace for requested module:
+./lib/actions/flight.actions.ts
+./app/(root)/page.tsx
+- [36mwait[39m compiling...
+- [31merror[39m ./lib/actions/flight.actions.ts
+Error: 
+  [31mx[0m Server actions must be async functions
+    ,-[[36;1;4m/Users/subhampanja/Desktop/pikky/apps/task_2/lib/actions/flight.actions.ts[0m:63:1]
+ [2m63[0m | }
+ [2m64[0m | 
+ [2m65[0m | // Function to simulate flights based on count
+ [2m66[0m | export function simulateFlights(count: number) {
+    : [31;1m                ^^^^^^^^^^^^^^^[0m
+ [2m67[0m |   const flights = [];
+ [2m68[0m | 
+ [2m69[0m |   // Generate 'count' number of flight data
+    `----
+
+Import trace for requested module:
+./lib/actions/flight.actions.ts
+./app/(root)/page.tsx
+- [36mwait[39m compiling...
+- [31merror[39m ./lib/actions/flight.actions.ts
+Error: 
+  [31mx[0m Server actions must be async functions
+    ,-[[36;1;4m/Users/subhampanja/Desktop/pikky/apps/task_2/lib/actions/flight.actions.ts[0m:63:1]
+ [2m63[0m | }
+ [2m64[0m | 
+ [2m65[0m | // Function to simulate flights based on count
+ [2m66[0m | export function simulateFlights(count: number) {
+    : [31;1m                ^^^^^^^^^^^^^^^[0m
+ [2m67[0m |   const flights = [];
+ [2m68[0m | 
+ [2m69[0m |   // Generate 'count' number of flight data
+    `----
+
+Import trace for requested module:
+./lib/actions/flight.actions.ts
+./app/(root)/page.tsx
+- [36mwait[39m compiling...
+- [31merror[39m ./lib/actions/flight.actions.ts
+Error: 
+  [31mx[0m Server actions must be async functions
+    ,-[[36;1;4m/Users/subhampanja/Desktop/pikky/apps/task_2/lib/actions/flight.actions.ts[0m:63:1]
+ [2m63[0m | }
+ [2m64[0m | 
+ [2m65[0m | // Function to simulate flights based on count
+ [2m66[0m | export function simulateFlights(count: number) {
+    : [31;1m                ^^^^^^^^^^^^^^^[0m
+ [2m67[0m |   const flights = [];
+ [2m68[0m | 
+ [2m69[0m |   // Generate 'count' number of flight data
+    `----
+
+Import trace for requested module:
+./lib/actions/flight.actions.ts
+./app/(root)/page.tsx
+- [36mwait[39m compiling...
+- [31merror[39m ./lib/actions/flight.actions.ts
+Error: 
+  [31mx[0m Server actions must be async functions
+    ,-[[36;1;4m/Users/subhampanja/Desktop/pikky/apps/task_2/lib/actions/flight.actions.ts[0m:63:1]
+ [2m63[0m | }
+ [2m64[0m | 
+ [2m65[0m | // Function to simulate flights based on count
+ [2m66[0m | export function simulateFlights(count: number) {
+    : [31;1m                ^^^^^^^^^^^^^^^[0m
+ [2m67[0m |   const flights = [];
+ [2m68[0m | 
+ [2m69[0m |   // Generate 'count' number of flight data
+    `----
+
+Import trace for requested module:
+./lib/actions/flight.actions.ts
+./app/(root)/page.tsx
+- [36mwait[39m compiling /api/auth/[...nextauth]/route (client and server)...
+- [31merror[39m ./lib/actions/flight.actions.ts
+Error: 
+  [31mx[0m Server actions must be async functions
+    ,-[[36;1;4m/Users/subhampanja/Desktop/pikky/apps/task_2/lib/actions/flight.actions.ts[0m:63:1]
+ [2m63[0m | }
+ [2m64[0m | 
+ [2m65[0m | // Function to simulate flights based on count
+ [2m66[0m | export function simulateFlights(count: number) {
+    : [31;1m                ^^^^^^^^^^^^^^^[0m
+ [2m67[0m |   const flights = [];
+ [2m68[0m | 
+ [2m69[0m |   // Generate 'count' number of flight data
+    `----
+
+Import trace for requested module:
+./lib/actions/flight.actions.ts
+./app/(root)/page.tsx
+- [36mwait[39m compiling /favicon.ico/route (client and server)...
+- [31merror[39m ./lib/actions/flight.actions.ts
+Error: 
+  [31mx[0m Server actions must be async functions
+    ,-[[36;1;4m/Users/subhampanja/Desktop/pikky/apps/task_2/lib/actions/flight.actions.ts[0m:63:1]
+ [2m63[0m | }
+ [2m64[0m | 
+ [2m65[0m | // Function to simulate flights based on count
+ [2m66[0m | export function simulateFlights(count: number) {
+    : [31;1m                ^^^^^^^^^^^^^^^[0m
+ [2m67[0m |   const flights = [];
+ [2m68[0m | 
+ [2m69[0m |   // Generate 'count' number of flight data
+    `----
+
+Import trace for requested module:
+./lib/actions/flight.actions.ts
+./app/(root)/page.tsx
+- [36mwait[39m compiling...
+- [31merror[39m ./lib/actions/flight.actions.ts:9:0
+[31m[1mModule not found[22m[39m: Can't resolve '[32mfaker[39m'
+[0m [90m  7 | [39m[36mimport[39m [33mFlightStatus[39m [36mfrom[39m [32m"../models/flight_status.model"[39m[33m;[39m[0m
+[0m [90m  8 | [39m[36mimport[39m [33mFlight[39m [36mfrom[39m [32m"../models/flight.model"[39m[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m  9 | [39m[36mimport[39m faker [36mfrom[39m [32m'faker'[39m[0m
+[0m [90m 10 | [39m[0m
+[0m [90m 11 | [39m[36mexport[39m [36masync[39m [36mfunction[39m getFlightStatus() {[0m
+[0m [90m 12 | [39m  [36mconst[39m session [33m=[39m [36mawait[39m getServerSession(nextauthOptions)[33m;[39m[0m
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fsubhampanja%2FDesktop%2Fpikky%2Fapps%2Ftask_2%2Flib%2Factions%2Fflight.actions.ts%22%2C%5B%22getFlightStatus%22%2C%22getAllFlights%22%2C%22simulateFlights%22%5D%5D%5D&__client_imported__=true!
+- [36mwait[39m compiling...
+- [31merror[39m ./lib/actions/flight.actions.ts:9:0
+[31m[1mModule not found[22m[39m: Can't resolve '[32mfaker[39m'
+[0m [90m  7 | [39m[36mimport[39m [33mFlightStatus[39m [36mfrom[39m [32m"../models/flight_status.model"[39m[33m;[39m[0m
+[0m [90m  8 | [39m[36mimport[39m [33mFlight[39m [36mfrom[39m [32m"../models/flight.model"[39m[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m  9 | [39m[36mimport[39m faker [36mfrom[39m [32m'faker'[39m[0m
+[0m [90m 10 | [39m[0m
+[0m [90m 11 | [39m[36mexport[39m [36masync[39m [36mfunction[39m getFlightStatus() {[0m
+[0m [90m 12 | [39m  [36mconst[39m session [33m=[39m [36mawait[39m getServerSession(nextauthOptions)[33m;[39m[0m
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fsubhampanja%2FDesktop%2Fpikky%2Fapps%2Ftask_2%2Flib%2Factions%2Fflight.actions.ts%22%2C%5B%22getFlightStatus%22%2C%22getAllFlights%22%2C%22simulateFlights%22%5D%5D%5D&__client_imported__=true!
+- [33mwarn[39m Fast Refresh had to perform a full reload due to a runtime error.
+- [36mwait[39m compiling...
+- [31merror[39m ./lib/actions/flight.actions.ts:9:0
+[31m[1mModule not found[22m[39m: Can't resolve '[32mfaker[39m'
+[0m [90m  7 | [39m[36mimport[39m [33mFlightStatus[39m [36mfrom[39m [32m"../models/flight_status.model"[39m[33m;[39m[0m
+[0m [90m  8 | [39m[36mimport[39m [33mFlight[39m [36mfrom[39m [32m"../models/flight.model"[39m[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m  9 | [39m[36mimport[39m faker [36mfrom[39m [32m'faker'[39m[0m
+[0m [90m 10 | [39m[0m
+[0m [90m 11 | [39m[36mexport[39m [36masync[39m [36mfunction[39m getFlightStatus() {[0m
+[0m [90m 12 | [39m  [36mconst[39m session [33m=[39m [36mawait[39m getServerSession(nextauthOptions)[33m;[39m[0m
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fsubhampanja%2FDesktop%2Fpikky%2Fapps%2Ftask_2%2Flib%2Factions%2Fflight.actions.ts%22%2C%5B%22getFlightStatus%22%2C%22getAllFlights%22%2C%22simulateFlights%22%5D%5D%5D&__client_imported__=true!
+- [33mwarn[39m Fast Refresh had to perform a full reload due to a runtime error.
+- [36mwait[39m compiling...
+- [31merror[39m ./lib/actions/flight.actions.ts:9:0
+[31m[1mModule not found[22m[39m: Can't resolve '[32mfaker[39m'
+[0m [90m  7 | [39m[36mimport[39m [33mFlightStatus[39m [36mfrom[39m [32m"../models/flight_status.model"[39m[33m;[39m[0m
+[0m [90m  8 | [39m[36mimport[39m [33mFlight[39m [36mfrom[39m [32m"../models/flight.model"[39m[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m  9 | [39m[36mimport[39m faker [36mfrom[39m [32m'faker'[39m[0m
+[0m [90m 10 | [39m[0m
+[0m [90m 11 | [39m[36mexport[39m [36masync[39m [36mfunction[39m getFlightStatus() {[0m
+[0m [90m 12 | [39m  [36mconst[39m session [33m=[39m [36mawait[39m getServerSession(nextauthOptions)[33m;[39m[0m
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fsubhampanja%2FDesktop%2Fpikky%2Fapps%2Ftask_2%2Flib%2Factions%2Fflight.actions.ts%22%2C%5B%22getFlightStatus%22%2C%22getAllFlights%22%2C%22simulateFlights%22%5D%5D%5D&__client_imported__=true!
+- [33mwarn[39m Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+- [36mwait[39m compiling...
+- [31merror[39m ./lib/actions/flight.actions.ts:9:0
+[31m[1mModule not found[22m[39m: Can't resolve '[32mfaker[39m'
+[0m [90m  7 | [39m[36mimport[39m [33mFlightStatus[39m [36mfrom[39m [32m"../models/flight_status.model"[39m[33m;[39m[0m
+[0m [90m  8 | [39m[36mimport[39m [33mFlight[39m [36mfrom[39m [32m"../models/flight.model"[39m[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m  9 | [39m[36mimport[39m faker [36mfrom[39m [32m'faker'[39m[0m
+[0m [90m 10 | [39m[0m
+[0m [90m 11 | [39m[36mexport[39m [36masync[39m [36mfunction[39m getFlightStatus() {[0m
+[0m [90m 12 | [39m  [36mconst[39m session [33m=[39m [36mawait[39m getServerSession(nextauthOptions)[33m;[39m[0m
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fsubhampanja%2FDesktop%2Fpikky%2Fapps%2Ftask_2%2Flib%2Factions%2Fflight.actions.ts%22%2C%5B%22getFlightStatus%22%2C%22getAllFlights%22%2C%22simulateFlights%22%5D%5D%5D&__client_imported__=true!
+- [33mwarn[39m Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+- [36mwait[39m compiling...
+- [31merror[39m ./lib/actions/flight.actions.ts:9:0
+[31m[1mModule not found[22m[39m: Can't resolve '[32mfaker[39m'
+[0m [90m  7 | [39m[36mimport[39m [33mFlightStatus[39m [36mfrom[39m [32m"../models/flight_status.model"[39m[33m;[39m[0m
+[0m [90m  8 | [39m[36mimport[39m [33mFlight[39m [36mfrom[39m [32m"../models/flight.model"[39m[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m  9 | [39m[36mimport[39m faker [36mfrom[39m [32m'faker'[39m[0m
+[0m [90m 10 | [39m[0m
+[0m [90m 11 | [39m[36mexport[39m [36masync[39m [36mfunction[39m getFlightStatus() {[0m
+[0m [90m 12 | [39m  [36mconst[39m session [33m=[39m [36mawait[39m getServerSession(nextauthOptions)[33m;[39m[0m
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fsubhampanja%2FDesktop%2Fpikky%2Fapps%2Ftask_2%2Flib%2Factions%2Fflight.actions.ts%22%2C%5B%22getFlightStatus%22%2C%22getAllFlights%22%2C%22simulateFlights%22%5D%5D%5D&__client_imported__=true!
+- [36mwait[39m compiling...
+- [31merror[39m ./lib/actions/flight.actions.ts:9:0
+[31m[1mModule not found[22m[39m: Can't resolve '[32mfaker[39m'
+[0m [90m  7 | [39m[36mimport[39m [33mFlightStatus[39m [36mfrom[39m [32m"../models/flight_status.model"[39m[33m;[39m[0m
+[0m [90m  8 | [39m[36mimport[39m [33mFlight[39m [36mfrom[39m [32m"../models/flight.model"[39m[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m  9 | [39m[36mimport[39m faker [36mfrom[39m [32m'faker'[39m[0m
+[0m [90m 10 | [39m[0m
+[0m [90m 11 | [39m[36mexport[39m [36masync[39m [36mfunction[39m getFlightStatus() {[0m
+[0m [90m 12 | [39m  [36mconst[39m session [33m=[39m [36mawait[39m getServerSession(nextauthOptions)[33m;[39m[0m
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fsubhampanja%2FDesktop%2Fpikky%2Fapps%2Ftask_2%2Flib%2Factions%2Fflight.actions.ts%22%2C%5B%22getFlightStatus%22%2C%22getAllFlights%22%2C%22simulateFlights%22%5D%5D%5D&__client_imported__=true!
+- [33mwarn[39m Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+^C[?25h

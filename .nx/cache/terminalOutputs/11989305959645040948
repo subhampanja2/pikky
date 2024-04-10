@@ -1,0 +1,220 @@
+
+> task_2@0.1.0 start:dev /Users/subhampanja/Desktop/pikky/apps/task_2
+> next dev
+
+- [36minfo[39m Loaded env from /Users/subhampanja/Desktop/pikky/apps/task_2/.env
+- [33mwarn[39m [1mYou have enabled experimental feature (serverActions) in next.config.js.[22m
+- [33mwarn[39m Experimental features are not covered by semver, and may cause unexpected or broken application behavior. Use at your own risk.
+
+- [32mready[39m started server on [::]:3000, url: http://localhost:3000
+- [35mevent[39m compiled client and server successfully in 322 ms (20 modules)
+- [36mwait[39m compiling...
+- [35mevent[39m compiled client and server successfully in 103 ms (20 modules)
+- [36minfo[39m Loaded env from /Users/subhampanja/Desktop/pikky/apps/task_2/.env
+- [36minfo[39m Loaded env from /Users/subhampanja/Desktop/pikky/apps/task_2/.env
+- [36mwait[39m compiling /(root)/page (client and server)...
+- [36mwait[39m compiling /_error (client and server)...
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+- [31merror[39m ./lib/actions/flight.actions.ts:9:0
+[31m[1mModule not found[22m[39m: Can't resolve '[32mfaker[39m'
+[0m [90m  7 | [39m[36mimport[39m [33mFlightStatus[39m [36mfrom[39m [32m"../models/flight_status.model"[39m[33m;[39m[0m
+[0m [90m  8 | [39m[36mimport[39m [33mFlight[39m [36mfrom[39m [32m"../models/flight.model"[39m[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m  9 | [39m[36mimport[39m faker [36mfrom[39m [32m'faker'[39m[0m
+[0m [90m 10 | [39m[0m
+[0m [90m 11 | [39m[36mexport[39m [36masync[39m [36mfunction[39m getFlightStatus() {[0m
+[0m [90m 12 | [39m  [36mconst[39m session [33m=[39m [36mawait[39m getServerSession(nextauthOptions)[33m;[39m[0m
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fsubhampanja%2FDesktop%2Fpikky%2Fapps%2Ftask_2%2Flib%2Factions%2Fflight.actions.ts%22%2C%5B%22getFlightStatus%22%2C%22getAllFlights%22%2C%22simulateFlights%22%5D%5D%5D&__client_imported__=true!
+- [31merror[39m ./lib/actions/flight.actions.ts:9:0
+[31m[1mModule not found[22m[39m: Can't resolve '[32mfaker[39m'
+[0m [90m  7 | [39m[36mimport[39m [33mFlightStatus[39m [36mfrom[39m [32m"../models/flight_status.model"[39m[33m;[39m[0m
+[0m [90m  8 | [39m[36mimport[39m [33mFlight[39m [36mfrom[39m [32m"../models/flight.model"[39m[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m  9 | [39m[36mimport[39m faker [36mfrom[39m [32m'faker'[39m[0m
+[0m [90m 10 | [39m[0m
+[0m [90m 11 | [39m[36mexport[39m [36masync[39m [36mfunction[39m getFlightStatus() {[0m
+[0m [90m 12 | [39m  [36mconst[39m session [33m=[39m [36mawait[39m getServerSession(nextauthOptions)[33m;[39m[0m
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fsubhampanja%2FDesktop%2Fpikky%2Fapps%2Ftask_2%2Flib%2Factions%2Fflight.actions.ts%22%2C%5B%22getFlightStatus%22%2C%22getAllFlights%22%2C%22simulateFlights%22%5D%5D%5D&__client_imported__=true!
+- [33mwarn[39m Fast Refresh had to perform a full reload due to a runtime error.
+- [36mwait[39m compiling...
+- [35mevent[39m compiled client and server successfully in 638 ms (530 modules)
+- [33mwarn[39m Fast Refresh had to perform a full reload due to a runtime error.
+- [36mwait[39m compiling /(root)/page (client and server)...
+- [31merror[39m ./lib/actions/flight.actions.ts:9:0
+[31m[1mModule not found[22m[39m: Can't resolve '[32mfaker[39m'
+[0m [90m  7 | [39m[36mimport[39m [33mFlightStatus[39m [36mfrom[39m [32m"../models/flight_status.model"[39m[33m;[39m[0m
+[0m [90m  8 | [39m[36mimport[39m [33mFlight[39m [36mfrom[39m [32m"../models/flight.model"[39m[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m  9 | [39m[36mimport[39m faker [36mfrom[39m [32m'faker'[39m[0m
+[0m [90m 10 | [39m[0m
+[0m [90m 11 | [39m[36mexport[39m [36masync[39m [36mfunction[39m getFlightStatus() {[0m
+[0m [90m 12 | [39m  [36mconst[39m session [33m=[39m [36mawait[39m getServerSession(nextauthOptions)[33m;[39m[0m
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fsubhampanja%2FDesktop%2Fpikky%2Fapps%2Ftask_2%2Flib%2Factions%2Fflight.actions.ts%22%2C%5B%22getFlightStatus%22%2C%22getAllFlights%22%2C%22simulateFlights%22%5D%5D%5D&__client_imported__=true!
+- [36mwait[39m compiling...
+- [35mevent[39m compiled client and server successfully in 727 ms (1386 modules)
+- [33mwarn[39m Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+🚀 Successfully connected to database
+- [36mwait[39m compiling /api/auth/[...nextauth]/route (client and server)...
+- [35mevent[39m compiled successfully in 592 ms (930 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+🚀 Successfully connected to database
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+🚀 Successfully connected to database
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  [{$__: ..., $isNew: false, _doc: ...}, ..., ..., ...]
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  {_id: {}, status: "Delayed", __v: 0}
+        ^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  [..., {$__: ..., $isNew: false, _doc: ...}, ..., ...]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  {_id: {}, status: ..., __v: 0}
+        ^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  [..., ..., {$__: ..., $isNew: false, _doc: ...}, ...]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  {_id: {}, status: ..., __v: 0}
+        ^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  [..., ..., ..., {$__: ..., $isNew: false, _doc: ...}]
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  {_id: {}, status: ..., __v: 0}
+        ^^
+- [36mwait[39m compiling...
+- [35mevent[39m compiled client and server successfully in 242 ms (1424 modules)
+- [36mwait[39m compiling...
+- [35mevent[39m compiled client and server successfully in 199 ms (1424 modules)
+- [36mwait[39m compiling...
+- [35mevent[39m compiled client and server successfully in 1937 ms (1463 modules)
+- [36mwait[39m compiling...
+- [35mevent[39m compiled client and server successfully in 164 ms (1463 modules)
+- [36mwait[39m compiling...
+- [35mevent[39m compiled client and server successfully in 173 ms (1463 modules)
+- [36mwait[39m compiling...
+- [35mevent[39m compiled client and server successfully in 184 ms (1463 modules)
+- [36mwait[39m compiling...
+- [35mevent[39m compiled client and server successfully in 319 ms (1463 modules)
+- [36mwait[39m compiling /api/auth/[...nextauth]/route (client and server)...
+- [35mevent[39m compiled successfully in 196 ms (1007 modules)
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+🚀 Successfully connected to database
+[next-auth][warn][NEXTAUTH_URL] 
+https://next-auth.js.org/warnings#nextauth_url
+🚀 Successfully connected to database
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  [{$__: ..., $isNew: false, _doc: ...}, ..., ..., ...]
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  {_id: {}, status: "Delayed", __v: 0}
+        ^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  [..., {$__: ..., $isNew: false, _doc: ...}, ..., ...]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  {_id: {}, status: ..., __v: 0}
+        ^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  [..., ..., {$__: ..., $isNew: false, _doc: ...}, ...]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  {_id: {}, status: ..., __v: 0}
+        ^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  [..., ..., ..., {$__: ..., $isNew: false, _doc: ...}]
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  {_id: {}, status: ..., __v: 0}
+        ^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  [{$__: ..., $isNew: false, _doc: ...}, ..., ..., ...]
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  {_id: {}, status: "Delayed", __v: 0}
+        ^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  [..., {$__: ..., $isNew: false, _doc: ...}, ..., ...]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  {_id: {}, status: ..., __v: 0}
+        ^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  [..., ..., {$__: ..., $isNew: false, _doc: ...}, ...]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  {_id: {}, status: ..., __v: 0}
+        ^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  [..., ..., ..., {$__: ..., $isNew: false, _doc: ...}]
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  {_id: {}, status: ..., __v: 0}
+        ^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  [{$__: ..., $isNew: false, _doc: ...}, ..., ..., ...]
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  {_id: {}, status: "Delayed", __v: 0}
+        ^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  [..., {$__: ..., $isNew: false, _doc: ...}, ..., ...]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  {_id: {}, status: ..., __v: 0}
+        ^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  [..., ..., {$__: ..., $isNew: false, _doc: ...}, ...]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  {_id: {}, status: ..., __v: 0}
+        ^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  [..., ..., ..., {$__: ..., $isNew: false, _doc: ...}]
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  {_id: {}, status: ..., __v: 0}
+        ^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  [{$__: ..., $isNew: false, _doc: ...}, ..., ..., ...]
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  {_id: {}, status: "Delayed", __v: 0}
+        ^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  [..., {$__: ..., $isNew: false, _doc: ...}, ..., ...]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  {_id: {}, status: ..., __v: 0}
+        ^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  [..., ..., {$__: ..., $isNew: false, _doc: ...}, ...]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  {_id: {}, status: ..., __v: 0}
+        ^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  [..., ..., ..., {$__: ..., $isNew: false, _doc: ...}]
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.
+  {_id: {}, status: ..., __v: 0}
+        ^^
+^C[?25h

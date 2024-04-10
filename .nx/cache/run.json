@@ -1,8 +1,8 @@
 {
   "run": {
     "command": "nx start:dev task_2",
-    "startTime": "2024-04-10T13:40:43.423Z",
-    "endTime": "2024-04-10T13:47:54.330Z",
+    "startTime": "2024-04-10T17:58:12.850Z",
+    "endTime": "2024-04-10T18:05:50.745Z",
     "inner": false
   },
   "tasks": [
@@ -10,9 +10,9 @@
       "taskId": "task_2:start:dev",
       "target": "start:dev",
       "projectName": "task_2",
-      "hash": "2401932716163387338",
-      "startTime": "2024-04-10T13:40:43.428Z",
-      "endTime": "2024-04-10T13:47:54.330Z",
+      "hash": "11989305959645040948",
+      "startTime": "2024-04-10T17:58:12.855Z",
+      "endTime": "2024-04-10T18:05:50.744Z",
       "params": "",
       "cacheStatus": "cache-miss",
       "status": 0
