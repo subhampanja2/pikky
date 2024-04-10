@@ -43,8 +43,11 @@ export default function DemoPage() {
 
   return (
     <div className="container mx-auto py-10">
-      <div className="text-right py-3">
-        <Button className="text-white" onClick={() => simulatFlights()}>
+      <div
+        className="text-right"
+        style={{ marginTop: "4rem", marginBottom: "2rem" }}
+      >
+        <Button onClick={() => simulatFlights()}>
           {pending ? "Simulating..." : "Simulate flights"}
         </Button>
       </div>
