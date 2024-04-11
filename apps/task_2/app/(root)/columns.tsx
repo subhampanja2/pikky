@@ -9,6 +9,16 @@ export type FlightData = {
   status: "Delayed" | "Cancelled" | "In-flight" | "Scheduled/En Route";
 };
 
+const formatDepartTime = (value: string): string => {
+  const date = new Date(value);
+  const day = date.getDate();
+  const month = date.getMonth() + 1;
+  const year = date.getFullYear();
+  const formattedDay = String(day).padStart(2, "0");
+  const formattedMonth = String(month).padStart(2, "0");
+  return `${formattedDay}/${formattedMonth}/${year}`;
+};
+
 export const columns: ColumnDef<FlightData>[] = [
   {
     accessorKey: "number",
@@ -25,9 +35,10 @@ export const columns: ColumnDef<FlightData>[] = [
   {
     accessorKey: "depart_time",
     header: "Depart Time",
+    cell: (row) => formatDepartTime(row.getValue() as string),
   },
   {
-    accessorKey: "status",
+    accessorKey: "status.status",
     header: "Status",
   },
 ];

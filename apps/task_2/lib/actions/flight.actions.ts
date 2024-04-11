@@ -40,7 +40,7 @@ export async function getAllFlights() {
       throw new Error("Unauthorization!");
     }
 
-    const flights = await Flight.find({}).lean();
+    const flights = await Flight.find({}).populate("status").lean();
 
     if (!flights) {
       throw new Error("flights does not exist!");
@@ -74,8 +74,6 @@ export async function simulateFlights(count: number) {
       flights.push(generate);
       await Flight.create(generate)
     }
-    // const addedFlights = await Flight.create(flights);
-    // return addedFlights;
     return 'done'
   } catch (error) {
     console.error("Error adding flights to database:", error);

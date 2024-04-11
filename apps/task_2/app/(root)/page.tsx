@@ -8,15 +8,43 @@ import {
   getFlightStatus,
   simulateFlights,
 } from "@/lib/actions/flight.actions";
-import { FlightData, columns } from "./columns";
+import { columns } from "./columns";
 import { useSession } from "next-auth/react";
 import { useToast } from "@/components/ui/use-toast";
 import { Button } from "@/components/ui/button";
 import { experimental_useFormStatus as useFormStatus } from "react-dom";
+import { socket } from "../../socket";
 
 export default function DemoPage() {
+  // const [isConnected, setIsConnected] = useState(false);
+
+  // useEffect(() => {
+  //   if (socket.connected) {
+  //     onConnect();
+  //   }
+
+  //   function onConnect() {
+  //     setIsConnected(true);
+  //     console.log("connected FE");
+  //     socket.on("flights-list", (data: any[]) => {
+  //       console.log("flights", data);
+  //     });
+  //   }
+
+  //   function onDisconnect() {
+  //     setIsConnected(false);
+  //   }
+  //   socket.on("connect", onConnect);
+  //   socket.on("disconnect", onDisconnect);
+
+  //   return () => {
+  //     socket.off("connect", onConnect);
+  //     socket.off("disconnect", onDisconnect);
+  //   };
+  // }, []);
+
   const [data, setData] = useState<any[]>([]);
-  const [flightStatus, setFlightStatus] = useState<string | null>(null);
+  // const [flightStatus, setFlightStatus] = useState<string | null>(null);
   const { toast } = useToast();
   const { pending } = useFormStatus();
 
@@ -24,20 +52,21 @@ export default function DemoPage() {
 
   const simulatFlights = async () => {
     await simulateFlights(10);
+    fetchData();
     toast({
       description: "Flight simulated succesfully. ",
     });
   };
 
-  useEffect(() => {
-    async function fetchData() {
-      const flightData = await getAllFlights();
-      setData(flightData);
-      if (status === "authenticated") {
-        const status = await getFlightStatus();
-      }
+  async function fetchData() {
+    const flightData = await getAllFlights();
+    setData(flightData);
+    if (status === "authenticated") {
+      const status = await getFlightStatus();
     }
+  }
 
+  useEffect(() => {
     fetchData();
   }, [status]);
 
@@ -47,9 +76,9 @@ export default function DemoPage() {
         className="text-right"
         style={{ marginTop: "4rem", marginBottom: "2rem" }}
       >
-        <Button onClick={() => simulatFlights()}>
+        {/* <Button onClick={() => simulatFlights()}>
           {pending ? "Simulating..." : "Simulate flights"}
-        </Button>
+        </Button> */}
       </div>
       <DataTable columns={columns} data={data} />
     </div>
